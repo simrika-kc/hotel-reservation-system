@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Sidebar Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    /* Adjust sidebar width as needed */
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #f8f9fa;
+      padding-top: 60px; /* Adjust as needed */
+    }
+
+    /* Style sidebar links */
+    .sidebar a {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 18px;
+      display: block;
+      color: #000;
+    }
+
+    /* Change color on hover */
+    .sidebar a:hover {
+      background-color: #e9ecef;
+    }
+
+    /* Style the logo */
+    .sidebar-logo {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .sidebar-logo img {
+      max-width: 80%;
+      height: auto;
+    }
+    .main-content {
+      margin-left: 250px;
+      padding: 10px;
+    }
+
+    .booking-btn {
+      float: right;
+    }
+
+    .overview {
+      margin-top: 80px;
+    
+      font-size: 15px;
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .info-item {
+      margin-right: 20px;
+      flex-grow: 1; /* Take up available space */
+      font-size: 24px; /* Increase font size */
+    }
+
+    .info-item span {
+      color: skyblue;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         
+      </ul>
+      <form class="d-flex">
+        <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" style="margin-left:250px; padding:20px;">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="sidebar-logo">
+      <img src="images/logo.png" alt="Logo" height="100">
+    </div>
+    <a href="#" class="d-flex"><i class="fas fa-building m-2"></i>Dashboard</a>
+    <a href="#"><i class="fas fa-desktop m-2"></i>Front desk</a>
+    <a href="#"><i class="fas fa-users m-2"></i>Guests</a>
+    <a href="#"><i class="fas fa-bed m-2"></i>Room</a>
+    <a href="#"><i class="fas fa-handshake m-2"></i>Deal</a>
+    <a href="#"><i class="fas fa-chart-line m-2"></i>Rate</a>
+</div>
+<div class="container-fluid">
+  <div class="main-content">
+    <!-- Create Booking Button -->
+    <button class="btn btn-primary booking-btn">Create Booking</button>
+
+    <!-- Overview -->
+    <div class="overview">Overview</div>
+
+    <!-- Information -->
+    <div class="info">
+      <div class="info-item">Check-in <span>23</span></div>
+      <div class="info-item">Check-out <span>13</span></div>
+      <div class="info-item">In Hotel <span>16</span></div>
+      <div class="info-item">Occupied Room <span>14</span></div>
+      <div class="info-item">Available Room <span>10</span></div>
+    </div>
+
+<!-- Page content -->
+  <h2>Main Content</h2>
+  <p>This is the main content area where your main content will be displayed.</p>
+</div>
+
+<!-- Bootstrap JS (Optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

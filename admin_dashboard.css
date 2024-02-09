@@ -1,0 +1,64 @@
+ /* Adjust sidebar width as needed */
+ .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    padding-top: 60px; /* Adjust as needed */
+  }
+
+  /* Style sidebar links */
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    color: #000;
+  }
+
+  /* Change color on hover */
+  .sidebar a:hover {
+    background-color: #e9ecef;
+  }
+
+  /* Style the logo */
+  .sidebar-logo {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .sidebar-logo img {
+    max-width: 80%;
+    height: auto;
+  }
+  .main-content {
+    margin-left: 250px;
+    padding: 10px;
+  }
+
+  .booking-btn {
+    float: right;
+  }
+
+  .overview {
+    margin-top: 80px;
+  
+    font-size: 15px;
+  }
+
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .info-item {
+    margin-right: 20px;
+    flex-grow: 1; /* Take up available space */
+    font-size: 24px; /* Increase font size */
+  }
+
+  .info-item span {
+    color: skyblue;
+  }
